@@ -133,6 +133,9 @@ This project demonstrates:
 **Deepika Narwani**
 B.Tech CSE Student
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/34854255-3b80-4014-9fe1-fe8f3d034a8a" />
+
+
 ---
 
 ## ⭐ Note
