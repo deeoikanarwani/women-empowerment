@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Messages</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>User Messages</h1>
+
+<div id="messages"></div>
+
+<script>
+
+fetch("/messages")
+.then(res => res.json())
+.then(data => {
+
+let container = document.getElementById("messages");
+
+data.forEach(msg => {
+
+let div = document.createElement("div");
+
+div.innerHTML = `
+<h3>${msg.name}</h3>
+<p>${msg.email}</p>
+<p>${msg.message}</p>
+<hr>
+`;
+
+container.appendChild(div);
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
